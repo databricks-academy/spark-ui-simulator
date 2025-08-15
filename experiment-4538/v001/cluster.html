@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../../common-ui/cuv001/application.css">
+        <link rel="stylesheet" type="text/css" href="../../common-ui/cuv001/clusters.css">
+        <script type="text/javascript" src="../../common-ui/cuv001/application.js"></script>
+        <style>
+            a.dot {
+                top:105px;
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body onload="hide(['cc-cm0','cc-cm1','cc-cm2','cc-gng','cc-gng1','cc-gng2','cc-gng3']);">
+        <div style="position: absolute; left: -76px">
+            <img id="screenshot" class="screenshot" src="screenshots/cluster.png"/>
+
+            <a id="cc-conf" class="dot" href="#" onclick="hideShow(clusterDotIds, ['cc-ui','cc-json']); return update('screenshots/cluster.png');" Title="Click to view the cluster configuration"></a>
+            <!--<a id="cc-note" class="dot" href="#" onclick="hideShow(clusterDotIds,[]);                   return update('screenshots/cluster-notebooks.png');" Title="Click to view the attached notebooks"></a>-->
+
+            <!--<a id="cc-lib" class="dot" href="#" onclick="hideShow(clusterDotIds,[]);                    return update('screenshots/cluster-libraries.png');" Title="Click to view the attached libraries"></a>-->
+            <!--<a id="cc-evt" class="dot" href="#" onclick="hideShow(clusterDotIds,[]);                    return update('screenshots/cluster-event-log.png');" Title="Click to view the event log"></a>-->
+
+            <a id="cc-sui" class="dot" href="spark-ui.html" target="_self" Title="Click to open the Spark UI"></a>
+            <!--<a id="cc-log" class="dot" href="#" onclick="hideShow(clusterDotIds,[]);                    return update('screenshots/cluster-driver-logs.png');" Title="Click to view the driver logs"></a>-->
+
+            <!--<a id="cc-met" class="dot" href="#" onclick="hideShow(clusterDotIds,['cc-gng','cc-gng1','cc-gng2','cc-gng3']); return update('screenshots/cluster-metrics.png');" Title="Click to view the cluster metrics"></a>-->
+            <!--<a id="cc-gng" class="dot" href="screenshots/cluster-metrics-ganglia.png" target="_blank" Title="Click to view the Ganglia UI"></a>-->
+            <!--<a id="cc-gng1" class="dot" href="screenshots/ganglia-1.png" target="_blank" Title="Click to view the Ganglia UI, VM #1">VM #1</a>-->
+            <!--<a id="cc-gng2" class="dot" href="screenshots/ganglia-2.png" target="_blank" Title="Click to view the Ganglia UI, VM #2">VM #2</a>-->
+            <!--<a id="cc-gng3" class="dot" href="screenshots/ganglia-3.png" target="_blank" Title="Click to view the Ganglia UI, VM #3">VM #3</a>-->
+
+            <!--<a id="cc-app" class="dot" href="#" onclick="hideShow(clusterDotIds,[]); return update('screenshots/cluster-apps.png');" Title="Click to view the integrated apps"></a>-->
+
+            <a id="cc-mas" class="dot" href="#" onclick="hideShow(clusterDotIds,['cc-cm0','cc-cm1','cc-cm2']); return update('screenshots/cluster-master.png');" Title="Click to view the Spark Cluster UI"></a>
+            <a id="cc-cm0" class="dot" href="#" onclick="return update('screenshots/cluster-master.png');" Title="Click to view the Spark Cluster UI"></a>
+            <a id="cc-cm1" class="dot" href="#" onclick="return update('screenshots/cluster-master-0.png');" Title="Click to view the Spark Cluster UI"></a>
+            <a id="cc-cm2" class="dot" href="#" onclick="return update('screenshots/cluster-master-1.png');" Title="Click to view the Spark Cluster UI"></a>
+        </div>
+    </body>
+</html>
