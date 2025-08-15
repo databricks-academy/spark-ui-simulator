@@ -1,0 +1,576 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../../common-ui/cuv001/application.css">
+        <script type="text/javascript" src="../../common-ui/cuv001/application.js"></script>
+        <style>
+            h1, h2 {
+                margin:0;
+            }
+            td {
+                padding: 5px;
+                border-bottom: 1px solid #ededed;
+            }
+            tbody.notebook td     { background-color: #D1E2FF; }
+            tbody.jobs td         { background-color: #BDFFC7; }
+            tbody.sql td          { background-color: #F7FFD8; }
+            tbody.stages td       { background-color: #ffdaf6; }
+            tbody.storage td      { background-color: #FFD3D1; }
+            tbody.executors td    { background-color: #AFFFF5; }
+            tbody.environment td  { background-color: #ffe9c3; }
+            tbody.extra td        { background-color: #D3D3D3; }
+            tbody.cluster td      { background-color: #d1d3c0; }
+        </style>
+    </head>
+    <body style="">
+        <table style="width:800px; margin: 1em">
+            <tr>
+                <td colspan="2">
+                    <h1>Lab: Exploring the Spark UI</h1>
+                    <div>WARNING: Do not reload or close this page - your answers will not be saved.</div>
+                </td>
+            </tr>
+            <tr style="font-size: 1em">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+
+
+            <tbody class="notebook">
+                <tr>
+                    <td colspan="2"><h2>Notebook: Exploring the Spark UI</h2>Complete the following questions by reviewing the output of the provided notebook.</td>
+                </tr>
+                <tr class="section">
+                    <td>How many jobs were executed by <b>Cmd 2</b>?<br/>Note: code was executed, namely listing all the files in the mount <code>/mnt/training</code></td>
+                    <td><input type="text" onchange="answerIs(this, ['0']);"></td>
+                </tr>
+                <tr>
+                    <td>How many jobs were executed by <b>Cmd 3</b>?</td>
+                    <td><input type="text" onchange="answerIs(this, ['2']);"></td>
+                </tr>
+                <tr>
+                    <td>In <b>Cmd 4</b>, how many stages did <b>Job #2</b> consist of?</td>
+                    <td><input type="text" onchange="answerIs(this, ['3']);"></td>
+                </tr>
+            </tbody>
+
+
+
+            <tbody class="cluster">
+                <tr class="section">
+                    <td colspan="2"><h2>Cluster</h2>Complete the following questions by reviewing the cluster configuration.</td>
+                </tr>
+                <tr>
+                    <td>What is the name of the pool VMs are pulled from?</td>
+                    <td><input type="text" onchange="answerIs(this, ['curriculum i3.xlarge', 'curriculum i3.xlarge pool']);"></td>
+                </tr>
+                <tr>
+                    <td>Which DBR is this cluster configured to use (#.#)?</td>
+                    <td><input type="text" onchange="answerIs(this, ['7.0']);"></td>
+                </tr>
+                <tr>
+                    <td>Which version of Python is this cluster configured to use (#)?</td>
+                    <td><input type="text" onchange="answerIs(this, ['3']);"></td>
+                </tr>
+                <tr>
+                    <td>Which version of Scala is this cluster configured to use (#.##)?</td>
+                    <td><input type="text" onchange="answerIs(this, ['2.12']);"></td>
+                </tr>
+                <tr>
+                    <td>Which version of Apache Spark is this cluster configured to use (#.#.#)?</td>
+                    <td><input type="text" onchange="answerIs(this, ['3.0.0']);"></td>
+                </tr>
+                <tr>
+                    <td>Which VM type is this cluster configured to use?</td>
+                    <td><input type="text" onchange="answerIs(this, ['i3.xlarge']);"></td>
+                </tr>
+                <tr>
+                    <td>How many cores does each VM make available?</td>
+                    <td><input type="text" onchange="answerIs(this, ['4']);"></td>
+                </tr>
+                <tr>
+                    <td>How many cores total does this cluster have available?</td>
+                    <td><input type="text" onchange="answerIs(this, ['8']);"></td>
+                </tr>
+                <tr>
+                    <td>How many VMs does this cluster consist of?</td>
+                    <td><input type="text" onchange="answerIs(this, ['3']);"></td>
+                </tr>
+                <tr>
+                    <td>Is autoscaling enabled?</td>
+                    <td>
+                        <select onchange="answerIs(this, ['no']);">
+                            <option value="" selected></option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Is the cluster configured to auto-terminate?</td>
+                    <td>
+                        <select onchange="answerIs(this, ['no']);">
+                            <option value="" selected></option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Specify one of the two libraries attached to this cluster:</td>
+                    <td><input type="text" onchange="answerIs(this, ['azure-eventhub', 'azure-eventhub==5.0.1', 'com.microsoft.azure:azure-eventhubs-spark_2.12:2.3.15', 'com.microsoft.azure:azure-eventhubs-spark_2.12']);"></td>
+                </tr>
+                <tr>
+                    <td>What is the size, in bytes, of the log file <b>stdout-2020-04-22-22-00</b></td>
+                    <td><input type="text" onchange="answerIs(this, ['302788']);"></td>
+                </tr>
+                <tr>
+                    <td>What is the name of the most recent cluster event (aka <b>Event Type</b>)?</td>
+                    <td><input type="text" onchange="answerIs(this, ['running']);"></td>
+                </tr>
+                <tr>
+                    <td>On which tab can you find the <b>Ganglia UI</b>?</td>
+                    <td>
+                        <select onchange="answerIs(this, ['metrics']);">
+                            <option value="" selected></option>
+                            <option value="Configuration">Configuration</option>
+                            <option value="Notebooks">Notebooks</option>
+                            <option value="Libraries">Libraries</option>
+                            <option value="Event Log">Event Log</option>
+                            <option value="Spark UI">Spark UI</option>
+                            <option value="Driver Logs">Driver Logs</option>
+                            <option value="Metrics">Metrics</option>
+                            <option value="Apps">Apps</option>
+                            <option value="Spark Cluster UI - Master">Spark Cluster UI - Master</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+
+
+
+
+            <tbody class="jobs">
+                <tr class="section">
+                    <td colspan="2"><h2>Spark UI - Jobs</h2>Complete the following questions by reviewing the output of the <b>Jobs</b> tab in the Spark UI.</td>
+                </tr>
+                <tr>
+                    <td>What action triggered job #0?</td>
+                    <td><input type="text" onchange="answerIs(this, ['parquet']);"></td>
+                </tr>
+                <tr>
+                    <td>What action triggered job #1?</td>
+                    <td><input type="text" onchange="answerIs(this, ['foreach']);"></td>
+                </tr>
+                <tr>
+                    <td>What action triggered job #2?</td>
+                    <td><input type="text" onchange="answerIs(this, ['count']);"></td>
+                </tr>
+                <tr>
+                    <td>What action triggered job #3?</td>
+                    <td><input type="text" onchange="answerIs(this, ['take']);"></td>
+                </tr>
+                <tr>
+                    <td>How many <b>actions</b> were executed?</td>
+                    <td><input type="text" onchange="answerIs(this, ['3']);"></td>
+                </tr>
+                <tr>
+                    <td><b>Job #0</b> shows <b>parquet</b> as the key operation that triggered this job. But
+                        <b>parquet</b> is not an action. What exactly was the job reading in during those 5 seconds?
+                    </td>
+                    <td><input type="text" onchange="answerIs(this, ['schema', 'the schema']);"></td>
+                </tr>
+                <tr>
+                    <td>How many tasks were executed for job #2?</td>
+                    <td><input type="text" onchange="answerIs(this, ['209']);"></td>
+                </tr>
+
+
+
+                <tr class="section">
+                    <td colspan="2">Open the details page for <b>Job #1</b>.</td>
+                </tr>
+                <tr>
+                    <td>How many Mebibyte of data was read in?</td>
+                    <td><input type="text" onchange="answerIs(this, ['22.8']);"></td>
+                </tr>
+                <tr>
+                    <td>How many seconds did <b>Stage #1</b> take?
+                    </td>
+                    <td><input type="text" onchange="answerIs(this, ['13']);"></td>
+                </tr>
+
+
+
+                <tr class="section">
+                    <td colspan="2">Open the details page for <b>Stage #1</b> of <b>Job #1</b></td>
+                </tr>
+                <tr>
+                    <td>How many records were read in?</td>
+                    <td><input type="text" onchange="answerIs(this, ['2345943']);"></td>
+                </tr>
+                <tr>
+                    <td>Review the <b>Event Timeline</b>. At a quick glance, does <b>Stage #1</b> look healthy?</td>
+                    <td>
+                        <select onchange="answerIs(this, ['yes']);">
+                            <option value="" selected></option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>How many times did Apache Spark attempt to execute this stage?</td>
+                    <td><input type="text" onchange="answerIs(this, ['1']);"></td>
+                </tr>
+                <tr>
+                    <td>In the <b>DAG Visualization</b>, which spark operation is implied by the green block </td>
+                    <td><input type="text" onchange="answerIs(this, ['cache', 'persist', 'cached', 'persisted']);"></td>
+                </tr>
+            </tbody>
+
+
+
+
+
+            <tbody class="sql">
+                <tr class="section">
+                    <td colspan="2"><h2>Spark UI - SQL</h2>Complete the following questions by reviewing the output of the <b>SQL</b> tab in the Spark UI.</td>
+                </tr>
+                <tr>
+                    <td>What job triggered <b>Query #7</b></td>
+                    <td><input type="text" onchange="answerIs(this, ['2']);"></td>
+                </tr>
+                <tr>
+                    <td>What query triggered <b>Job #3</b></td>
+                    <td><input type="text" onchange="answerIs(this, ['8']);"></td>
+                </tr>
+                <tr>
+                    <td>Which query took the most amount of time to execute?</td>
+                    <td><input type="text" onchange="answerIs(this, ['6']);"></td>
+                </tr>
+
+
+                <tr class="section">
+                    <td colspan="2">Open the details page for <b>Query #7</b></td>
+                </tr>
+                <tr>
+                    <td>How many rows were output by the first filter operation found in <b>WholeStageCodegen (1)</b>?</td>
+                    <td><input type="text" onchange="answerIs(this, ['2281084', '2,281,084']);"></td>
+                </tr>
+                <tr>
+                    <td>How many rows were output by the second filter operation found in <b>WholeStageCodegen (2)</b>?</td>
+                    <td><input type="text" onchange="answerIs(this, ['55']);"></td>
+                </tr>
+                <tr>
+                    <td>How many rows were estimated to be output by the second filter operation found in <b>WholeStageCodegen (2)</b></td>
+                    <td><input type="text" onchange="answerIs(this, ['2345943']);"></td>
+                </tr>
+                <tr>
+                    <td>By what factor was the estimating off for the second filter operation found in <b>WholeStageCodegen (2)</b>?</td>
+                    <td><input type="text" onchange="answerIs(this, ['100000x', '100000']);"></td>
+                </tr>
+                <tr>
+                    <td>How many records were finally returned by <b>Query #7</b>?</td>
+                    <td><input type="text" onchange="answerIs(this, ['1']);"></td>
+                </tr>
+                <tr>
+                    <td>Which Spark <b>action</b> resulted in the execution of <b>Query #7</b>?</td>
+                    <td><input type="text" onchange="answerIs(this, ['count']);"></td>
+                </tr>
+            </tbody>
+
+
+            <tbody class="stages">
+
+                <tr class="section">
+                    <td colspan="2"><h2>Spark UI - Stages</h2>Complete the following questions by reviewing the output of the <b>Stages</b> tab in the Spark UI.</td>
+                </tr>
+                <tr>
+                    <td>How many stages where executed in all?</td>
+                    <td><input type="text" onchange="answerIs(this, ['7']);"></td>
+                </tr>
+                <tr>
+                    <td>How many tasks were executed for stage #3</td>
+                    <td><input type="text" onchange="answerIs(this, ['200']);"></td>
+                </tr>
+                <tr>
+                    <td>What <b>Scheduling Mode</b> is being employed by this application (specifically the acronym)?</td>
+                    <td><input type="text" onchange="answerIs(this, ['fifo']);"></td>
+                </tr>
+                <tr>
+                    <td>What does that acronym stand for?</td>
+                    <td><input type="text" onchange="answerIs(this, ['first in first out', 'first-in-first-out']);"></td>
+                </tr>
+
+
+
+                <tr class="section">
+                    <td colspan="2">Open the details page for <b>Stage #6</b></td>
+                </tr>
+                <tr>
+                    <td>In the <b>Event Timeline</b>, what is represented by the blue bars?</td>
+                    <td><input type="text" onchange="answerIs(this, ['scheduler delay']);"></td>
+                </tr>
+                <tr>
+                    <td>In the <b>Event Timeline</b>, what is represented by the red bars?</td>
+                    <td><input type="text" onchange="answerIs(this, ['task deserialization time']);"></td>
+                </tr>
+                <tr>
+                    <td>In the <b>Event Timeline</b>, what is represented by the orange bars?</td>
+                    <td><input type="text" onchange="answerIs(this, ['shuffle read time']);"></td>
+                </tr>
+                <tr>
+                    <td>In the <b>Event Timeline</b>, what is represented by the green bars?</td>
+                    <td><input type="text" onchange="answerIs(this, ['executor computing time']);"></td>
+                </tr>
+                <tr>
+                    <td>Of the seven colors represented in the <b>Event Timeline</b>, which color do we <b>want</b> to see the most of (blue, red, orange, green, yellow, purple or turquoise)?</td>
+                    <td><input type="text" onchange="answerIs(this, ['green']);"></td>
+                </tr>
+
+
+                <tr class="section">
+                    <td colspan="2">Open the details page for <b>Stage #5</b></td>
+                </tr>
+                <tr>
+                    <td>Which job does <b>Stage #5</b> belong to?</td>
+                    <td><input type="text" onchange="answerIs(this, ['3']);"></td>
+                </tr>
+                <tr>
+                    <td>At a quick glance of the <b>Event Timeline</b>, does <b>Stage #5</b> look healthy?</td>
+                    <td>
+                        <select onchange="answerIs(this, ['yes']);">
+                            <option value="" selected></option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Contrast the <b>Event Timeline</b> of <b>Stage #5</b> to <b>Stage #6</b>. Is <b>Stage #6</b> healthy?</td>
+                    <td>
+                        <select onchange="answerIs(this, ['no']);">
+                            <option value="" selected></option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+
+
+
+            <tbody class="storage">
+                <tr class="section">
+                    <td colspan="2"><h2>Spark UI - Storage</h2>Complete the following questions by reviewing the output of the <b>Storage</b> tab in the Spark UI.</td>
+                </tr>
+                <tr>
+                    <td>Without counting, how many partitions were cached for <b>RDD #5</b>?</td>
+                    <td><input type="text" onchange="answerIs(this, ['8']);"></td>
+                </tr>
+                <tr>
+                    <td>Is the cached data for <b>RDD #5</b> evenly distributed?</td>
+                    <td>
+                        <select onchange="answerIs(this, ['yes']);">
+                            <option value="" selected></option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>How many Mebibytes of data is cached in each partition for <b>RDD #5</b>?</td>
+                    <td><input type="text" onchange="answerIs(this, ['7', '7.', '7.0']);"></td>
+                </tr>
+                <tr>
+                    <td>How many Mebibytes of the cached data was spilled to disk for <b>RDD #5</b>?</td>
+                    <td><input type="text" onchange="answerIs(this, ['0']);"></td>
+                </tr>
+                <tr>
+                    <td>What is the final size, in Mebibytes, of the cached data for <b>RDD #5</b>?</td>
+                    <td><input type="text" onchange="answerIs(this, ['55.8']);"></td>
+                </tr>
+                <tr>
+                    <td>What percentage of <b>RDD #5</b> is cached?</td>
+                    <td><input type="text" onchange="answerIs(this, ['100','100%']);"></td>
+                </tr>
+                <tr>
+                    <td>How many Mebibytes of data is in the <b>Parquet IO Cache</b> (aka the <b>Delta Cache</b>) across all executors?</td>
+                    <td><input type="text" onchange="answerIs(this, ['55.8']);"></td>
+                </tr>
+                <tr>
+                    <td>What is the maximum capacity, in Gibibytes, of the <b>Parquet IO Cache</b> for the entire cluster?</td>
+                    <td><input type="text" onchange="answerIs(this, ['927.7']);"></td>
+                </tr>
+                <tr>
+                    <td>Because the <b>Parquet IO Cache</b> is caching the data to each executor's disk, what level of locality is Spark using for this job?<br/>
+                        Hint #1: This is not the <b>normal</b> locality for cloud storage.<br/>
+                        Hint #2: It's spelled out in the <b>Task</b> section of any stage's details page
+                    </td>
+                    <td>
+                        <select onchange="answerIs(this, ['process_local']);">
+                            <option value="" selected></option>
+                            <option value="ANY">ANY - data is elsewhere but not on the same rack.</option>
+                            <option value="NODE_LOCAL">NODE_LOCAL - data and processing are in the same node but on different executor. This level is slower than the previous one because it has to move the data between processed</option>
+                            <option value="NO_PREF">NO_PREF - means no locality preference.</option>
+                            <option value="PROCESS_LOCAL">PROCESS_LOCAL - data and processing are localized on the same JVM</option>
+                            <option value="RACK_LOCAL">RACK_LOCAL - data is located in other node than processing but both nodes are on the same rack. Obviously here the data is moved through the network.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Because the <b>Delta Cache</b> has moved the data to the executors, should we be using the cluster's RAM for caching?
+                    </td>
+                    <td>
+                        <select onchange="answerIs(this, ['probably not']);">
+                            <option value="" selected></option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="probably not">Probably not</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+
+
+
+            <tbody class="executors">
+                <tr class="section">
+                    <td colspan="2"><h2>Spark UI - Executors</h2>Complete the following questions by reviewing the output of the <b>Executors</b> tab in the Spark UI.</td>
+                </tr>
+                <tr>
+                    <td>How many cores do you have for parallel processing?</td>
+                    <td><input type="text" onchange="answerIs(this, ['8']);"></td>
+                </tr>
+                <tr>
+                    <td>What is the IP Address of the driver?</td>
+                    <td><input type="text" onchange="answerIs(this, ['10.181.237.107']);"></td>
+                </tr>
+                <tr>
+                    <td>How many tasks is your cluster able to simultaneously execute?</td>
+                    <td><input type="text" onchange="answerIs(this, ['8']);"></td>
+                </tr>
+            </tbody>
+
+
+
+
+            <tbody class="environment">
+                <tr class="section">
+                    <td colspan="2">Open the <b>Spark UI</b> and navigate to <b>Environment</b> tab:</td>
+                </tr>
+                <tr>
+                    <td>What is the path to your <b>Java Home</b>? (see <b>Runtime Information</b>)</td>
+                    <td><input type="text" onchange="answerIs(this, ['/usr/lib/jvm/java-8-openjdk-amd64/jre']);"></td>
+                </tr>
+                <tr>
+                    <td>Is <a taret="_blank" target="https://spark.apache.org/docs/latest/configuration.html#scheduling">speculative execution</a> of tasks enabled (see <b>Spark Properties</b>)?</td>
+                    <td>
+                        <select onchange="answerIs(this, ['no']);">
+                            <option value="" selected></option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Which file encoding is Spark configured to use (see <b>System Properties</b>?</td>
+                    <td>
+                        <select onchange="answerIs(this, ['no']);">
+                            <option value="" selected></option>
+                            <option value="UTF-8">UTF-8</option>
+                            <option value="UTF-16BE">UTF-16BE</option>
+                            <option value="UTF-32BE">UTF-32BE</option>
+                            <option value="UTF-16LE">UTF-16LE</option>
+                            <option value="UTF-32LE">UTF-32LE</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+
+
+
+
+
+            <tbody class="extra">
+                <tr class="section">
+                    <td colspan="2"><h2>Spark UI - ???</h2>Complete the following questions by navigating the Spark UI as necessary.</td>
+                </tr>
+
+                <tr class="section">
+                    <td colspan="2">Investigate <b>Job #2</b> and answer these questions:</td>
+                </tr>
+                <tr>
+                    <td>Which operation is triggering the shuffle at the end of <b>Stage #2</b></td>
+                    <td><input type="text" onchange="answerIs(this, ['groupby']);"></td>
+                </tr>
+                <tr>
+                    <td>Which operation is triggering the shuffle at the end of <b>Stage #3</b></td>
+                    <td><input type="text" onchange="answerIs(this, ['orderby']);"></td>
+                </tr>
+                <tr>
+                    <td>Which operation is triggering the shuffle at the end of <b>Stage #4</b>
+                    <td><input type="text" onchange="answerIs(this, ['count']);"></td>
+                </tr>
+
+
+
+                <tr class="section">
+                    <td colspan="2">Investigate <b>Job #2</b>, <b>Stage #3</b> and answer these questions:</td>
+                </tr>
+                <tr>
+                    <td>How many records where read in as a result of the previous shuffle operation?</td>
+                    <td><input type="text" onchange="answerIs(this, ['3665']);"></td>
+                </tr>
+                <tr>
+                    <td>How many records were written out as a result of this shuffle operation?</td>
+                    <td><input type="text" onchange="answerIs(this, ['200']);"></td>
+                </tr>
+
+
+
+                <tr class="section">
+                    <td colspan="2">Investigate <b>Job #3</b>, <b>Stage #6</b> and answer these questions:</td>
+                </tr>
+                <tr>
+                    <td>According to the <b>Summary Metrics</b> at least one task spent more time in garbage collection than any other. How many milliseconds where spent in that task?</td>
+                    <td><input type="text" onchange="answerIs(this, ['25', '25.', '25.0']);"></td>
+                </tr>
+                <tr>
+                    <td>According to the <b>Summary Metrics</b> what was the least amount of time spent scheduling tasks?</td>
+                    <td><input type="text" onchange="answerIs(this, ['4', '4.', '4.0']);"></td>
+                </tr>
+                <tr>
+                    <td>According to the <b>Summary Metrics</b> the average task shuffled had 16 records and the largest task had 55 records? What term is generally used to to describe this difference (granted, typically of a much larger magnitude?</td>
+                    <td><input type="text" onchange="answerIs(this, ['skew']);"></td>
+                </tr>
+                <tr>
+                    <td>What is the IP address of the executor that processed the most tasks?</td>
+                    <td><input type="text" onchange="answerIs(this, ['10.181.234.65']);"></td>
+                </tr>
+                <tr>
+                    <td>Which one task spent the most time serializing the result?</td>
+                    <td><input type="text" onchange="answerIs(this, ['8']);"></td>
+                </tr>
+                <tr>
+                    <td>Did any of the tasks fail? That is did they produce an error?</td>
+                    <td>
+                        <select onchange="answerIs(this, ['no']);">
+                            <option value="" selected></option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Two tasks spent more time in garbage collection than all the other tasks. Identify one of them:</td>
+                    <td><input type="text" onchange="answerIs(this, ['155','161']);"></td>
+                </tr>
+                <tr>
+                    <td>Identify one of the tasks that didn't process any records:</td>
+                    <td><input type="text" onchange="answerIs(this, ['2','5','47','87','105','106','115','124','137','161','180','191']);"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

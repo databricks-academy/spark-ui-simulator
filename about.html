@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <title>About the Spark UI Simulator - Databricks Academy</title>
+        <link rel="stylesheet" type="text/css" href="../assets/application.css">
+    </head>
+    <body>
+        <h1>About the Spark UI Simulator - Databricks Academy</h1>
+        
+        <div style="background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 15px; margin: 20px 0;">
+            <strong>Important Notice:</strong> This simulator represents a snapshot in time of the Spark UI and is intended solely for instructional purposes. It does not demonstrate the latest Spark features or UI improvements, but serves as a historical reference for learning core Spark concepts.
+        </div>
+
+        <h2>Purpose</h2>
+        <p>This application was developed to aid in the instruction of Apache Spark concepts. Some of these concepts require an inordinate amount of time to demonstrate, making it impractical to do so live or otherwise costly for you to do so on your own time.</p>
+        <p>For this reason, pre-run jobs, all the metrics related to the execution of those jobs, the cluster configuration, and the source code for those jobs are bundled with each simulation. You are encouraged to reproduce these scenarios to deepen your understanding of Apache Spark.</p>
+
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Pre-recorded Spark Jobs:</strong> Complete execution data from real Spark applications</li>
+            <li><strong>Interactive UI Elements:</strong> Navigate through relevant parts of the Spark UI</li>
+            <li><strong>Source Code Included:</strong> Both Python and Scala implementations available</li>
+            <li><strong>Cluster Configuration:</strong> View the exact cluster settings used for each experiment</li>
+            <li><strong>Educational Focus:</strong> Designed specifically for learning Spark performance concepts</li>
+        </ul>
+
+        <h2>Structure</h2>
+        <p>The simulator contains multiple experiments organized in folders:</p>
+        <ul>
+            <li><code>experiment-XXXX/</code> - Individual simulation scenarios</li>
+            <li><code>common-ui/</code> - Shared UI components and styles</li>
+            <li><code>common-screenshots/</code> - Reusable interface elements</li>
+            <li>Each experiment includes:
+                <ul>
+                    <li>HTML interface files</li>
+                    <li>Source code (Python <code>.py</code> or Scala <code>.scala</code>)</li>
+                    <li>Screenshots of the actual Spark UI</li>
+                    <li>Configuration files</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Limitations</h2>
+        <p>As a simulator, there are specific, known limitations:</p>
+        <ul>
+            <li><strong>Limited Interactivity:</strong> Not every part of the screen is interactive - only those elements that are deemed relevant to a simulation are enabled</li>
+            <li><strong>Static Content:</strong> The screen is composed of screenshots making it impossible to grep for text the way you would with a live application</li>
+            <li><strong>Timestamp Accuracy:</strong> Timestamps across a single simulation will be inaccurate - this is a byproduct of having to rerun experiments multiple times to capture different content</li>
+        </ul>
+
+        <h2>Getting Started</h2>
+        <ol>
+            <li>Open <code>index.html</code> in your web browser to access the main simulation menu</li>
+            <li>Navigate to any experiment folder to explore specific scenarios</li>
+            <li>Each experiment contains its own <code>index.html</code> file with the simulation interface</li>
+            <li>Review the included source code to understand the Spark jobs being simulated</li>
+        </ol>
+
+        <h2>Educational Use</h2>
+        <p>This simulator is ideal for:</p>
+        <ul>
+            <li>Understanding Spark UI navigation</li>
+            <li>Learning performance optimization concepts</li>
+            <li>Analyzing job execution patterns</li>
+            <li>Studying different Spark application behaviors</li>
+        </ul>
+
+    </body>
+</html>

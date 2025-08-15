@@ -1,0 +1,2 @@
+// Auto generated config
+const job_stages = {0: {0: {'top': 878, 'left': 387}}, 1: {1: {'top': 791, 'left': 380}}, 2: {4: {'top': 791, 'left': 381}, 3: {'top': 840, 'left': 381}, 2: {'top': 889, 'left': 381}}, 3: {6: {'top': 791, 'left': 386}, 5: {'top': 840, 'left': 386}}, 4: {14: {'top': 808, 'left': 380}, 13: {'top': 857, 'left': 380}, 12: {'top': 906, 'left': 380}, 11: {'top': 955, 'left': 380}, 10: {'top': 1004, 'left': 380}, 9: {'top': 1053, 'left': 380}, 8: {'top': 1102, 'left': 380}, 7: {'top': 1151, 'left': 380}}};
