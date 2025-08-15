@@ -1,0 +1,124 @@
+<html lang="html">
+    <head>
+        <title>Spark UI Storage</title>
+        <link rel="stylesheet" type="text/css" href="../cuv003/application.css">
+        <script type="text/javascript" src="../../assets/global.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script>logger.info("spark-ui-storage.html")</script>
+    </head>
+    <body onload="initStorage()">
+        <div class="screenshot">
+            <img id="screenshot" src=""/>
+
+            <a id="row-0" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-1" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-2" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-3" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-4" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-5" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-6" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-7" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-8" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-9" class="dot" style="display:none" href="#" target="_top"></a>
+
+            <a id="row-10" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-11" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-12" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-13" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-14" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-15" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-16" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-17" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-18" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-19" class="dot" style="display:none" href="#" target="_top"></a>
+
+            <a id="row-20" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-21" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-22" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-23" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-24" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-25" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-26" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-27" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-28" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-29" class="dot" style="display:none" href="#" target="_top"></a>
+
+            <a id="row-30" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-31" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-32" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-33" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-34" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-35" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-36" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-37" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-38" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-39" class="dot" style="display:none" href="#" target="_top"></a>
+
+            <a id="row-40" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-41" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-42" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-43" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-44" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-45" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-46" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-47" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-48" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-49" class="dot" style="display:none" href="#" target="_top"></a>
+
+            <a id="row-50" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-51" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-52" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-53" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-54" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-55" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-56" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-57" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-58" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-59" class="dot" style="display:none" href="#" target="_top"></a>
+
+            <a id="row-60" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-61" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-62" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-63" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-64" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-65" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-66" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-67" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-68" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-69" class="dot" style="display:none" href="#" target="_top"></a>
+
+            <a id="row-70" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-71" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-72" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-73" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-74" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-75" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-76" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-77" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-78" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-79" class="dot" style="display:none" href="#" target="_top"></a>
+
+            <a id="row-80" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-81" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-82" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-83" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-84" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-85" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-86" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-87" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-88" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-89" class="dot" style="display:none" href="#" target="_top"></a>
+
+            <a id="row-90" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-91" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-92" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-93" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-94" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-95" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-96" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-97" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-98" class="dot" style="display:none" href="#" target="_top"></a>
+            <a id="row-99" class="dot" style="display:none" href="#" target="_top"></a>
+        </div>
+    </body>
+</html>

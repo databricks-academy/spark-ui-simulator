@@ -1,0 +1,287 @@
+
+:root {
+    --offset_x: -60px;
+    --offset_y: -48px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    border-collapse: collapse;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+td {
+    padding: 0;
+    vertical-align: top;
+}
+
+.pad-left {
+    margin-left: 0.5em;
+}
+
+.pad-right {
+    margin-right: 0.5em;
+}
+
+tr.section > td {
+    padding-top: 2em;
+}
+
+.button {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    text-decoration: none;
+    padding: 4px;
+    border-color: #3a88fe;
+    background-color: #ededed;
+    color: black;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div.screenshot {
+    position: absolute;
+    /*top: -30px;*/
+    top: 0;
+    width: 1900px;
+    overflow-x: auto;
+}
+
+div.screenshot > img {
+    border: 0;
+    display: block;
+    width: 1920px;
+    overflow-x: hidden
+}
+
+code {
+    font-weight: bold;
+    background-color: #ededed;
+}
+
+input {
+    width: 12em;
+}
+
+select {
+    width: 12em;
+}
+
+a.dot {
+    position: absolute;
+    background-image: url("../../assets/dot-red.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    /*Debugging placement*/
+    border: 2px solid #a8c6fe;
+    border-radius: 5px;
+}
+
+a.dot:hover {
+    background-image: url("../../assets/dot-orange.png");
+}
+
+/**************************
+ Spark-UI Specific Styles
+***************************/
+
+img.ui-panel {
+    position: relative;
+    top:-30px;
+}
+
+a.sui-job {
+    top: 75px;
+    height: 20px;
+    left: 14px;
+    width: 40px;
+}
+
+a.sui-stage {
+    top: 75px;
+    height: 20px;
+    left: 71px;
+    width: 55px;
+}
+
+a.sui-store {
+    top: 75px;
+    height: 20px;
+    left: 142px;
+    width: 60px;
+}
+
+a.sui-env {
+    top: 75px;
+    height: 20px;
+    left: 217px;
+    width: 90px;
+}
+
+a.sui-exec {
+    top: 75px;
+    height: 20px;
+    left: 319px;
+    width: 73px;
+}
+
+a.sui-sql {
+    top: 75px;
+    height: 20px;
+    left: 407px;
+    width: 43px;
+}
+
+a.sui-jdbc {
+    top: 75px;
+    height: 20px;
+    left: 464px;
+    width: 130px;
+}
+
+a.sui-ss {
+    top: 75px;
+    height: 20px;
+    left: 612px;
+    width: 135px;
+}
+
+
+/**************************
+ Cluster Specific Styles
+***************************/
+
+:root {
+    --cc_top: 144px;
+}
+
+#cc-conf {
+    left: 66px;
+    width: 97px;
+    top: var(--cc_top);
+}
+#cc-note {
+    left: 172px;
+    width: 98px;
+    top: var(--cc_top);
+}
+#cc-lib {
+    left: 278px;
+    width: 63px;
+    top: var(--cc_top);
+}
+#cc-evt {
+    left: 352px;
+    width: 70px;
+    top: var(--cc_top);
+}
+#cc-sui {
+    left: 431px;
+    width: 65px;
+    top: var(--cc_top);
+}
+#cc-log {
+    left: 505px;
+    width: 80px;
+    top: var(--cc_top);
+}
+#cc-met {
+    left: 593px;
+    width: 59px;
+    top: var(--cc_top);
+}
+#cc-app {
+    left: 661px;
+    width: 46px;
+    top: var(--cc_top);
+}
+#cc-mas {
+    left: 715px;
+    width: 180px;
+    top: var(--cc_top);
+}
+
+:root {
+    --cc_cm_left: 730px;
+    --cc_cm_width: 185px;
+    --cc_cm_top: calc(var(--cc_top) + 40px);
+}
+#cc-cm0 {
+    top: calc(var(--cc_cm_top) + 0px);
+    left: var(--cc_cm_left);
+    width: var(--cc_cm_width);
+    background-position: right center;
+}
+#cc-cm1 {
+    top: calc(var(--cc_cm_top) + 27px);
+    left: var(--cc_cm_left);
+    width: var(--cc_cm_width);
+    background-position: right center;
+}
+#cc-cm2 {
+    top: calc(var(--cc_cm_top) + 54px);
+    left: var(--cc_cm_left);
+    width: var(--cc_cm_width);
+    background-position: right center;
+}
+#cc-ui {
+    top: calc(var(--cc_top) + 46px);
+    left: 1772px;
+    width: 25px;
+}
+#cc-json {
+    top: calc(var(--cc_top) + 46px);
+    left: 1807px;
+    width: 48px;
+}
+#cc-gng {
+    top: calc(var(--cc_top) + 73px);
+    left: 181px;
+    width: 80px;
+    padding: 3px 0 0 10px;
+    color: #167b95;
+    font-size: smaller;
+}
+
+body.exp-root {
+    padding: 20px;
+}
+
+body.exp-root li {
+    margin-bottom: 1em;
+}

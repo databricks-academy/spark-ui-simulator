@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <title>Spark UI Simulator - Databricks Academy</title>
+
+        <link rel="stylesheet" type="text/css" href="../cuv005/application.css">
+        <script type="text/javascript" src="../../assets/global.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script>logger.info("main.html")</script>
+    </head>
+    <body onload="initMainUI();">
+        <table>
+            <tr style="background-color: #a8c6fe;">
+                <td style="padding: 5px; white-space: nowrap">
+                    <a id="link-notebook" href="#" class="button pad-left" target="_top">Notebook</a>
+                    <a id="link-spark-ui" href="#" class="button pad-left" target="_top">Spark UI</a>
+                    <a id="link-cluster"  href="#" class="button pad-left" target="_top">Cluster</a>
+                    <a id="link-lab"      href="#" class="button pad-left" target="_blank">Lab</a>
+                </td>
+                <td id="main_title" style="width: 100%; text-align: center; padding: 5px; vertical-align: middle; font-size: x-large">
+                    The Spark UI Simulator
+                </td>
+                <td style="padding: 5px;text-align: right; white-space: nowrap;">
+                    <a id="link-src-scala" href="#" class="button pad-right" target="main-ui">Source Notebook</a>
+                    <a id="link-src-python" href="#" class="button pad-right" target="main-ui">Source Notebook</a>
+
+                    <a class="button pad-right" href="../../index.html" target="_top">Home</a>
+                    <a class="button pad-right" href="../../about.html" target="main-ui">About</a>
+                </td>
+            </tr>
+            <tr style="height: 100%"><td colspan="3"><iframe id="main-ui" name="main-ui" style="width:100%; height:100%"></iframe></td></tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+#cc-conf {
+    left: 91px;
+    width: 90px;
+}
+#cc-note {
+    left: 191px;
+    width: 95px;
+}
+#cc-lib {
+    left: 299px;
+    width: 63px;
+}
+#cc-evt {
+    left: 376px;
+    width: 72px;
+}
+#cc-sui {
+    left: 461px;
+    width: 65px;
+}
+#cc-log {
+    left: 536px;
+    width: 80px;
+}
+#cc-met {
+    left: 629px;
+    width: 57px;
+}
+#cc-app {
+    left: 697px;
+    width: 46px;
+}
+#cc-mas {
+    left: 753px;
+    width: 180px;
+}
+#cc-cm0 {
+    left: 754px;
+    top: 150px;
+    width: 190px;
+    background-position: right center;
+}
+#cc-cm1 {
+    left: 754px;
+    top: 176px;
+    width: 190px;
+    background-position: right center;
+}
+#cc-cm2 {
+    left: 754px;
+    top: 204px;
+    width: 190px;
+    background-position: right center;
+}
+#cc-ui {
+    left: 1785px;
+    top: 158px;
+    width: 25px;
+}
+#cc-json {
+    left: 1822px;
+    top: 158px;
+    width: 48px;
+}
+#cc-gng {
+    left: 84px;
+    top: 201px;
+    width: 90px;
+}
+#cc-gng1 {
+    left: 186px;
+    top: 201px;
+    width: 45px;
+    padding: 3px 0 0 10px;
+    color: #167b95;
+    font-size: smaller;
+}
+#cc-gng2 {
+    left: 250px;
+    top: 201px;
+    width: 45px;
+    padding: 3px 0 0 10px;
+    color: #167b95;
+    font-size: smaller;
+}
+#cc-gng3 {
+    left: 315px;
+    top: 201px;
+    width: 45px;
+    padding: 3px 0 0 10px;
+    color: #167b95;
+    font-size: smaller;
+}

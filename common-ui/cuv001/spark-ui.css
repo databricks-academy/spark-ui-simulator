@@ -1,0 +1,55 @@
+a.sui-job {
+    top: 75px;
+    height: 20px;
+    left: 14px;
+    width: 40px;
+}
+
+a.sui-stage {
+    top: 75px;
+    height: 20px;
+    left: 71px;
+    width: 55px;
+}
+
+a.sui-store {
+    top: 75px;
+    height: 20px;
+    left: 142px;
+    width: 60px;
+}
+
+a.sui-env {
+    top: 75px;
+    height: 20px;
+    left: 217px;
+    width: 90px;
+}
+
+a.sui-exec {
+    top: 75px;
+    height: 20px;
+    left: 319px;
+    width: 73px;
+}
+
+a.sui-sql {
+    top: 75px;
+    height: 20px;
+    left: 407px;
+    width: 43px;
+}
+
+a.sui-jdbc {
+    top: 75px;
+    height: 20px;
+    left: 464px;
+    width: 130px;
+}
+
+a.sui-ss {
+    top: 75px;
+    height: 20px;
+    left: 612px;
+    width: 135px;
+}

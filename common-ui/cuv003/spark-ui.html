@@ -1,0 +1,32 @@
+<html lang="html">
+    <head>
+        <title>Spark UI</title>
+        <link rel="stylesheet" type="text/css" href="../cuv003/application.css">
+        <script type="text/javascript" src="../../assets/global.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script>logger.info("spark-ui.html")</script>
+    </head>
+    <body onload="initSparkUI()">
+        <table>
+            <tr style="height:101px">
+                <td style="overflow-x: hidden">
+                    <img src="../../assets/spark-ui.png" style="position:relative; top:0; left:0; width:1920px; height:101px; display:block"/>
+
+                    <a class="dot sui-job"   id="link-sui-jobs"    target="_top" href="#" Title="Click to view the Jobs tab"></a>
+                    <a class="dot sui-stage" id="link-sui-stages"  target="_top" href="#" Title="Click to view the Stages tab"></a>
+                    <a class="dot sui-store" id="link-sui-storage" target="_top" href="#" Title="Click to view the Storage tab"></a>
+                    <a class="dot sui-env"   id="link-sui-env"     target="_top" href="#" Title="Click to view the Environment tab"></a>
+                    <a class="dot sui-exec"  id="link-sui-exec"    target="_top" href="#" Title="Click to view the Executors tab"></a>
+                    <a class="dot sui-sql"   id="link-sui-sql"     target="_top" href="#" Title="Click to view the SQL tab"></a>
+                    <a class="dot sui-jdbc"  id="link-sui-jdbc"    target="_top" href="#" Title="Click to view the JDBC/ODBC Server tab"></a>
+                    <a class="dot sui-ss"    id="link-sui-streams" target="_top" href="#" Title="Click to view the Structured Streaming tab"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <iframe id="spark-ui" name="spark-ui" src="" style="width:100%; height:100%;"></iframe>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

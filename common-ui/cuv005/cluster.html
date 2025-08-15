@@ -1,0 +1,44 @@
+<html lang="html">
+    <head>
+        <title>Cluster</title>
+        <link rel="stylesheet" type="text/css" href="../cuv005/application.css">
+        <script type="text/javascript" src="../../assets/global.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <style>
+            a.dot {
+                top:105px;
+                height: 20px;
+            }
+        </style>
+        <script>logger.info("cluster.html")</script>
+    </head>
+    <body onload="initCluster()">
+        <div style="position: absolute; left: var(--offset_x); top: var(--offset_y)">
+            <img id="screenshot" src=""/>
+
+            <a id="cc-conf" class="dot" href="#" target="_top" title="Click to view the cluster configuration"></a>
+            <a id="cc-ui"   class="dot" href="#" target="_top" title="Click to view the cluster configuration"></a>
+            <a id="cc-json" class="dot" href="#" target="_top" title="Click to view the cluster configuration"></a>
+
+            <a id="cc-note" class="dot" href="#" target="_top" title="Click to view the attached notebooks"></a>
+
+            <a id="cc-lib" class="dot" href="#" target="_top" title="Click to view the attached libraries"></a>
+            <a id="cc-evt" class="dot" href="#" target="_top" title="Click to view the event log"></a>
+
+            <a id="cc-sui" class="dot" href="#" target="_top" title="Click to open the Spark UI"></a>
+            <a id="cc-log" class="dot" href="#" target="_top" title="Click to view the driver logs"></a>
+
+            <a id="cc-met" class="dot" href="#" target="_top" title="Click to view the cluster metrics"></a>
+
+            <a id="cc-gng" class="dot" href="#" target="_blank" title="Click to view the Ganglia UI, VM #0"></a>
+
+            <a id="cc-app" class="dot" href="#" target="_top" title="Click to view the integrated apps"></a>
+
+            <a id="cc-mas" class="dot" href="#" target="_top" title="Click to view the Spark Cluster UI"></a>
+
+            <a id="cc-cm0" class="dot" href="#" onclick="return update('screenshots/cluster-master.png');" target="_top" title="Click to view the Spark Cluster UI"></a>
+            <a id="cc-cm1" class="dot" href="#" onclick="return update('screenshots/cluster-master-0.png');" target="_top" title="Click to view the Spark Cluster UI"></a>
+            <a id="cc-cm2" class="dot" href="#" onclick="return update('screenshots/cluster-master-1.png');" target="_top" title="Click to view the Spark Cluster UI"></a>
+        </div>
+    </body>
+</html>
